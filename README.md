@@ -14,4 +14,5 @@ Please see the [LICENSE.txt][license] file for details.
 
 [icon]: https://github.com/Xyaneon/Xyaneon.Games.Dice/blob/master/Xyaneon.Games.Dice/images/icon.png
 [license]: https://github.com/Xyaneon/Xyaneon.Games.Dice/blob/master/LICENSE.txt
+[NuGet package]: https://www.nuget.org/packages/Xyaneon.Games.Dice/
 [Travis CI]: https://travis-ci.com/Xyaneon/Xyaneon.Games.Dice
