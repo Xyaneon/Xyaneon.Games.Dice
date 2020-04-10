@@ -2,7 +2,28 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Xyaneon.Games.Dice</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Christopher Kyle Horton</Authors>
+    <Company>Christopher Kyle Horton</Company>
+    <PackageTags>netstandard;games;dice</PackageTags>
+    <Description>
+      A .NET Standard library for dice, including standard and custom dice.
+    </Description>
+    <Copyright>Copyright © Christopher Kyle Horton 2020</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Xyaneon/Xyaneon.Games.Dice</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Xyaneon/Xyaneon.Games.Dice</RepositoryUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageIconUrl>https://raw.githubusercontent.com/Xyaneon/Xyaneon.Games.Dice/master/Xyaneon.Games.Dice/images/icon.png</PackageIconUrl>
+    <RepositoryType>git</RepositoryType>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="images\icon.png" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
 </Project>
