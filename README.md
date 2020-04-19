@@ -1,6 +1,6 @@
 # Xyaneon.Games.Dice
 
-[![LIcense](https://img.shields.io/github/license/Xyaneon/Xyaneon.Games.Dice)][License]
+[![License](https://img.shields.io/github/license/Xyaneon/Xyaneon.Games.Dice)][License]
 [![NuGet](https://img.shields.io/nuget/v/Xyaneon.Games.Dice.svg?style=flat)][NuGet package]
 [![Build Status](https://travis-ci.com/Xyaneon/Xyaneon.Games.Dice.svg?branch=master)][Travis CI]
 
