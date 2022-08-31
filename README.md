@@ -14,6 +14,10 @@ A .NET 5.0 library for dice, including standard and custom dice.
 This library is free and open-source software provided under the MIT license.
 Please see the [LICENSE.txt][License] file for details.
 
+## Testing
+
+This section can be ignored. It is for checking whether an issue from another repository also affects this one.
+
 [icon]: https://github.com/Xyaneon/Xyaneon.Games.Dice/blob/master/Xyaneon.Games.Dice/images/icon.png
 [License]: https://github.com/Xyaneon/Xyaneon.Games.Dice/blob/master/LICENSE.txt
 [NuGet package]: https://www.nuget.org/packages/Xyaneon.Games.Dice/
