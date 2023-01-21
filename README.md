@@ -6,7 +6,7 @@
 
 ![Package Icon][icon]
 
-A .NET 5.0 library for dice, including standard and custom dice.
+A .NET Standard 2.0 library for dice, including standard and custom dice.
 
 ## License
 
