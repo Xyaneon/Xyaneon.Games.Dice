@@ -1,0 +1,60 @@
+{
+    "branches": ["main"],
+    "plugins": [
+        [
+            "@semantic-release/commit-analyzer",
+            {
+                "preset": "conventionalcommits"
+            }
+        ],
+        "@semantic-release/release-notes-generator",
+        [
+            "@semantic-release/changelog",
+            {
+                "changelogFile": "CHANGELOG.md",
+                "changelogTitle": "# Changelog"
+            }
+        ],
+        [
+            "@droidsolutions-oss/semantic-release-update-file",
+            {
+                "files": [
+                    {
+                        "path": ["Directory.Build.props"],
+                        "type": "xml",
+                        "replacements": [
+                            { "key": "Version", "value": "${nextRelease.version}" },
+                            { "key": "RepositoryCommit", "value": "${nextRelease.gitHead}" }
+                        ]
+                    }
+                ]
+            }
+        ],
+        [
+            "@droidsolutions-oss/semantic-release-nuget",
+            {
+                "projectPath": "Xyaneon.Games.Dice/Xyaneon.Games.Dice.csproj",
+                "includeSymbols": true
+            }
+        ],
+        [
+            "@semantic-release/git",
+            {
+                "assets": [
+                    "CHANGELOG.md",
+                    "Directory.Build.props"
+                ]
+            }
+        ],
+        [
+            "@semantic-release/github",
+            {
+                "assets": [
+                    {
+                        "path": "out/**"
+                    }
+                ]
+            }
+        ]
+    ]
+}
