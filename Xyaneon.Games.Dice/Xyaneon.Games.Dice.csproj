@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>Xyaneon.Games.Dice</PackageId>
     <PackageTags>netstandard games dice</PackageTags>
     <Description>
