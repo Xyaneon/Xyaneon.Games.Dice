@@ -4,7 +4,7 @@
     <OutputType>Library</OutputType>
     <TargetFramework>net5.0</TargetFramework>
     <PackageId>Xyaneon.Games.Dice</PackageId>
-    <PackageTags>netstandard;games;dice</PackageTags>
+    <PackageTags>netstandard games dice</PackageTags>
     <Description>
       A .NET Standard library for dice, including standard and custom dice.
     </Description>
