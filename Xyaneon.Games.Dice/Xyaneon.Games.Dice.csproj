@@ -16,11 +16,7 @@
     <RepositoryType>git</RepositoryType>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <PackageReleaseNotes>
-      ## 0.1.0 - 2020-04-10
-      ### Added
-      - Initial release.
-    </PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/Xyaneon/Xyaneon.Games.Dice/releases</PackageReleaseNotes>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
