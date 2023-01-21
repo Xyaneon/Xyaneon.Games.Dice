@@ -37,3 +37,9 @@ jobs:
       
     - name: Test
       run: dotnet test -c Release --no-build --verbosity normal
+      
+    - name: Semantic Release
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}
+      run: npx semantic-release
