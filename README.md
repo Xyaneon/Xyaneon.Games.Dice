@@ -3,6 +3,7 @@
 [![License](https://img.shields.io/github/license/Xyaneon/Xyaneon.Games.Dice)][License]
 [![NuGet](https://img.shields.io/nuget/v/Xyaneon.Games.Dice.svg?style=flat)][NuGet package]
 [![Build and test](https://github.com/Xyaneon/Xyaneon.Games.Dice/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Xyaneon/Xyaneon.Games.Dice/actions/workflows/dotnet.yml)
+[![Coverage Status](https://coveralls.io/repos/github/Xyaneon/Xyaneon.Games.Dice/badge.svg?branch=main)](https://coveralls.io/github/Xyaneon/Xyaneon.Games.Dice?branch=main)
 
 ![Package Icon][icon]
 
