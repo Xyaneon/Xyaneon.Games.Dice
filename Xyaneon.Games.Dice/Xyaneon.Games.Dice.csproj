@@ -16,7 +16,7 @@
     <PackageProjectUrl>https://github.com/Xyaneon/Xyaneon.Games.Dice</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Xyaneon/Xyaneon.Games.Dice</RepositoryUrl>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageIconUrl>https://raw.githubusercontent.com/Xyaneon/Xyaneon.Games.Dice/master/Xyaneon.Games.Dice/images/icon.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/Xyaneon/Xyaneon.Games.Dice/main/Xyaneon.Games.Dice/images/icon.png</PackageIconUrl>
     <RepositoryType>git</RepositoryType>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
