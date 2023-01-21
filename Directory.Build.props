@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+      <Version>0.1.0</Version>
+      <Authors>Christopher Kyle Horton</Authors>
+      <Company>Christopher Kyle Horton</Company>
+      <Copyright>Copyright © Christopher Kyle Horton 2020-2023</Copyright>
+      <RepositoryUrl>https://github.com/Xyaneon/Xyaneon.Games.Dice</RepositoryUrl>
+      <RepositoryBranch>main</RepositoryBranch>
+      <RepositoryCommit>18c633bd7c020c3f17f621a0d02c5b7bc5085d22</RepositoryCommit>
+  </PropertyGroup>
+</Project>
