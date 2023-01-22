@@ -91,10 +91,6 @@ namespace Xyaneon.Games.Dice
         /// </summary>
         public IEnumerable<TFace> Faces { get => FaceList; }
 
-        private IReadOnlyList<TFace> FaceList { get; }
-
-        private Random Random { get; }
-
         /// <summary>
         /// Rolls this die and returns the result.
         /// </summary>
@@ -132,5 +128,9 @@ namespace Xyaneon.Games.Dice
                 yield return Roll();
             }
         }
+
+        private IReadOnlyList<TFace> FaceList { get; }
+
+        private Random Random { get; }
     }
 }
