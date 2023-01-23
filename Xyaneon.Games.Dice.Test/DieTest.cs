@@ -7,17 +7,23 @@ namespace Xyaneon.Games.Dice.Test
     public class DieTest
     {
         [TestMethod]
-        [ExpectedException(typeof(ArgumentNullException))]
         public void Constructor_Faces_ShouldNotCreateDieFromNullCollection()
         {
-            Die<int> die = new Die<int>(null);
+            var actualException = Assert.ThrowsException<ArgumentNullException>(() => {
+                _ = new Die<int>(null);
+            });
+
+            Assert.IsTrue(actualException.Message.Contains("The collection of faces for the die cannot be null."));
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
         public void Constructor_Faces_ShouldNotCreateDieFromEmptyCollection()
         {
-            Die<int> die = new Die<int>(new int[] { });
+            var actualException = Assert.ThrowsException<ArgumentException>(() => {
+                _ = new Die<int>(new int[] { });
+            });
+
+            Assert.IsTrue(actualException.Message.Contains("A die must have at least one face."));
         }
 
         [TestMethod]
@@ -29,17 +35,23 @@ namespace Xyaneon.Games.Dice.Test
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentNullException))]
         public void Constructor_FacesAndSeed_ShouldNotCreateDieFromNullCollection()
         {
-            Die<int> die = new Die<int>(null, 123);
+            var actualException = Assert.ThrowsException<ArgumentNullException>(() => {
+                _ = new Die<int>(null, 123);
+            });
+
+            Assert.IsTrue(actualException.Message.Contains("The collection of faces for the die cannot be null."));
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
         public void Constructor_FacesAndSeed_ShouldNotCreateDieFromEmptyCollection()
         {
-            Die<int> die = new Die<int>(new int[] { }, 123);
+            var actualException = Assert.ThrowsException<ArgumentException>(() => {
+                _ = new Die<int>(new int[] { }, 123);
+            });
+
+            Assert.IsTrue(actualException.Message.Contains("A die must have at least one face."));
         }
 
         [TestMethod]
