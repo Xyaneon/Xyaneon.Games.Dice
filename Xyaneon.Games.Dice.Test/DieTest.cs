@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Xyaneon.Games.Dice.Test
 {
@@ -65,7 +66,7 @@ namespace Xyaneon.Games.Dice.Test
 
         [TestMethod]
         [Timeout(1000)]
-        public void Roll_ShouldReturnElementInFaceList()
+        public void Roll_Void_ShouldReturnElementInFaceList()
         {
             IList<int> faces = new int[] { 1, 2, 3 };
             var die = new Die<int>(faces);
@@ -73,7 +74,45 @@ namespace Xyaneon.Games.Dice.Test
             for (int i = 0; i < 1000; i++)
             {
                 var actual = die.Roll();
-                CollectionAssert.Contains((System.Collections.ICollection)faces, actual);
+                CollectionAssert.Contains(faces.ToList(), actual);
+            }
+        }
+
+        [TestMethod]
+        [DataRow(0)]
+        [DataRow(-1)]
+        public void Roll_Times_ShouldThrowForNonPositiveArguments(int times)
+        {
+            IList<int> faces = new int[] { 1, 2, 3 };
+            var die = new Die<int>(faces);
+
+            var actualException = Assert.ThrowsException<ArgumentOutOfRangeException>(() => {
+                _ = die.Roll(times).ToList();
+            });
+
+            Assert.IsTrue(actualException.Message.Contains("The number of times to roll the die must be at least one."));
+        }
+
+        [TestMethod]
+        [DataRow(1)]
+        [DataRow(2)]
+        [DataRow(3)]
+        [Timeout(1000)]
+        public void Roll_Times_ShouldReturnExpectedNumberOfElementsInFaceList(int times)
+        {
+            IList<int> faces = new int[] { 1, 2, 3 };
+            var die = new Die<int>(faces);
+
+            for (int i = 0; i < 1000; i++)
+            {
+                IEnumerable<int> actual = die.Roll(times);
+
+                Assert.IsNotNull(actual);
+                Assert.AreEqual(times, actual.Count());
+                foreach (int element in actual)
+                {
+                    CollectionAssert.Contains(faces.ToList(), element);
+                }
             }
         }
     }
