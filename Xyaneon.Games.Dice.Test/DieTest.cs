@@ -1,5 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
 
 namespace Xyaneon.Games.Dice.Test
 {
@@ -60,6 +61,20 @@ namespace Xyaneon.Games.Dice.Test
             Die<int> die = new Die<int>(new int[] { 1, 2, 3 }, 123);
 
             Assert.AreEqual(3, die.FaceCount);
+        }
+
+        [TestMethod]
+        [Timeout(1000)]
+        public void Roll_ShouldReturnElementInFaceList()
+        {
+            IList<int> faces = new int[] { 1, 2, 3 };
+            var die = new Die<int>(faces);
+
+            for (int i = 0; i < 1000; i++)
+            {
+                var actual = die.Roll();
+                CollectionAssert.Contains((System.Collections.ICollection)faces, actual);
+            }
         }
     }
 }
