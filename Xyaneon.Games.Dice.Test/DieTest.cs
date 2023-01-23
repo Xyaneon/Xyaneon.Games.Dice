@@ -21,6 +21,14 @@ namespace Xyaneon.Games.Dice.Test
         }
 
         [TestMethod]
+        public void Constructor_Faces_ShouldInitializeFaceCountToCorrectNumberOfFaces()
+        {
+            Die<int> die = new Die<int>(new int[] { 1, 2, 3 });
+
+            Assert.AreEqual(3, die.FaceCount);
+        }
+
+        [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
         public void Constructor_FacesAndSeed_ShouldNotCreateDieFromNullCollection()
         {
@@ -35,9 +43,9 @@ namespace Xyaneon.Games.Dice.Test
         }
 
         [TestMethod]
-        public void FaceCount_ShouldReturnCorrectNumberOfFaces()
+        public void Constructor_FacesAndSeed_ShouldInitializeFaceCountToCorrectNumberOfFaces()
         {
-            Die<int> die = new Die<int>(new int[] { 1, 2, 3 });
+            Die<int> die = new Die<int>(new int[] { 1, 2, 3 }, 123);
 
             Assert.AreEqual(3, die.FaceCount);
         }
