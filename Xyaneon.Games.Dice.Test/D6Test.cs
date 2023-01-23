@@ -14,7 +14,7 @@ namespace Xyaneon.Games.Dice.Test
         }
 
         [TestMethod]
-        public void Constructor_Seed_ShouldInitializeFaceCountTo4()
+        public void Constructor_Seed_ShouldInitializeFaceCountTo6()
         {
             var die = new D6(123);
 
