@@ -74,8 +74,8 @@ namespace Xyaneon.Games.Dice
         /// <exception cref="ArgumentOutOfRangeException">
         /// <paramref name="symbol"/> is not a valid standard D6 symbol.
         /// </exception>
-        /// <seealso cref="getSymbolForD6Value(int)"/>
-        public static int getD6ValueForSymbol(char symbol)
+        /// <seealso cref="GetSymbolForD6Value(int)"/>
+        public static int GetD6ValueForSymbol(char symbol)
         {
             try
             {
@@ -96,8 +96,8 @@ namespace Xyaneon.Games.Dice
         /// <exception cref="ArgumentOutOfRangeException">
         /// <paramref name="value"/> is not a valid standard D6 value.
         /// </exception>
-        /// <seealso cref="getD6ValueForSymbol(char)"/>
-        public static char getSymbolForD6Value(int value)
+        /// <seealso cref="GetD6ValueForSymbol(char)"/>
+        public static char GetSymbolForD6Value(int value)
         {
             try
             {

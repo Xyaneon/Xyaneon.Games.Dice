@@ -10,7 +10,7 @@ namespace Xyaneon.Games.Dice.Test
         public void GetD6ValueForSymbol_ShouldThrowForInvalidSymbol()
         {
             var actualException = Assert.ThrowsException<ArgumentOutOfRangeException>(() => {
-                Symbols.getD6ValueForSymbol('X');
+                Symbols.GetD6ValueForSymbol('X');
             });
 
             Assert.IsTrue(actualException.Message.Contains("The provided symbol is not a valid standard D6 symbol."));
@@ -25,7 +25,7 @@ namespace Xyaneon.Games.Dice.Test
         [DataRow('⚅', 6)]
         public void GetD6ValueForSymbol_ShouldReturnCorrectValueForSymbol(char symbol, int expected)
         {
-            int actual = Symbols.getD6ValueForSymbol(symbol);
+            int actual = Symbols.GetD6ValueForSymbol(symbol);
 
             Assert.AreEqual(expected, actual);
         }
@@ -36,7 +36,7 @@ namespace Xyaneon.Games.Dice.Test
         public void GetSymbolForD6Value_ShouldThrowForInvalidValue(int value)
         {
             var actualException = Assert.ThrowsException<ArgumentOutOfRangeException>(() => {
-                Symbols.getSymbolForD6Value(value);
+                Symbols.GetSymbolForD6Value(value);
             });
 
             Assert.IsTrue(actualException.Message.Contains("The provided value is not a valid standard D6 value."));
@@ -51,7 +51,7 @@ namespace Xyaneon.Games.Dice.Test
         [DataRow('⚅', 6)]
         public void GetSymbolForD6Value_ShouldReturnCorrectSymbolForValue(char expected, int value)
         {
-            char actual = Symbols.getSymbolForD6Value(value);
+            char actual = Symbols.GetSymbolForD6Value(value);
 
             Assert.AreEqual(expected, actual);
         }
