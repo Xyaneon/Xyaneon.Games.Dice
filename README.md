@@ -91,6 +91,15 @@ var colorDie = new Die<Color>(new Color[] {
 Color rollResult = die.Roll();
 ```
 
+### Symbols conversion
+
+A static `Symbols` class is also provided with constants for D6 faces, and a
+couple conversion methods:
+- `Symbols.GetD6ValueForSymbol(char symbol)`
+- `Symbols.GetSymbolForD6Value(int value)`
+
+You can use these to get from a ⚃ character to a 4 or vice versa, for example.
+
 ## License
 
 This library is free and open-source software provided under the MIT license.
