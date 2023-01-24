@@ -27,7 +27,7 @@ namespace Xyaneon.Games.Dice
         public Coin(int seed) : base(Sides, seed) { }
 
         /// <summary>
-        /// An alias for the inherited <see cref="Die{TFace}.Roll"/> method
+        /// An alias for the inherited <see cref="Die{TFace}.Roll()"/> method
         /// specific to coins.
         /// </summary>
         /// <returns>A new <see cref="CoinFlipResult"/> value.</returns>
@@ -43,7 +43,7 @@ namespace Xyaneon.Games.Dice
         /// <exception cref="ArgumentOutOfRangeException">
         /// <paramref name="times"/> is less than one.
         /// </exception>
-        /// <seealso cref="Flip"/>
+        /// <seealso cref="Flip()"/>
         public IEnumerable<CoinFlipResult> Flip(int times) => Roll(times);
     }
 }
