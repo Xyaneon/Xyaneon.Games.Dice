@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/Xyaneon/Xyaneon.Games.Dice/compare/v2.0.0...v2.0.1) (2023-01-24)
+
+
+### Bug Fixes
+
+* **doc-comments:** fix ambiguous reference warnings for XML doc comments ([#28](https://github.com/Xyaneon/Xyaneon.Games.Dice/issues/28)) ([373c3bf](https://github.com/Xyaneon/Xyaneon.Games.Dice/commit/373c3bf289f68177af9f28bd88462fbcc31e8b60))
+
 # [2.0.0](https://github.com/Xyaneon/Xyaneon.Games.Dice/compare/v1.0.0...v2.0.0) (2023-01-24)
 
 # [1.0.0](https://github.com/Xyaneon/Xyaneon.Games.Dice/compare/v0.1.0...v1.0.0) (2023-01-22)
