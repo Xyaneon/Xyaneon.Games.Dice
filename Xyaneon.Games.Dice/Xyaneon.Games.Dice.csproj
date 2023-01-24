@@ -3,13 +3,13 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageId>Xyaneon.Games.Dice</PackageId>
     <PackageTags>netstandard games dice</PackageTags>
     <Description>
-      A .NET Standard library for dice, including standard and custom dice.
+      A .NET Standard 2.0 library for dice, including standard and custom dice.
     </Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Xyaneon/Xyaneon.Games.Dice</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>icon.png</PackageIcon>
     <PackageIconUrl>https://raw.githubusercontent.com/Xyaneon/Xyaneon.Games.Dice/main/Xyaneon.Games.Dice/images/icon.png</PackageIconUrl>
     <RepositoryType>git</RepositoryType>
