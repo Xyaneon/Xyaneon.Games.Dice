@@ -60,7 +60,7 @@ namespace Xyaneon.Games.Dice
         /// </exception>
         /// <remarks>
         /// If a seed is provided to the constructor, then the result of each
-        /// <see cref="Roll"/> call made in sequence will be predetermined by
+        /// <see cref="Roll()"/> call made in sequence will be predetermined by
         /// the seed value provided.
         /// </remarks>
         /// <seealso cref="Die{TFace}.Die(IEnumerable{TFace})"/>
@@ -97,7 +97,7 @@ namespace Xyaneon.Games.Dice
         /// <returns>The result of the die roll as a <typeparamref name="TFace"/> value.</returns>
         /// <remarks>
         /// If a seed was provided to the constructor, then the result of each
-        /// <see cref="Roll"/> call made in sequence will be predetermined by
+        /// <see cref="Roll()"/> call made in sequence will be predetermined by
         /// the seed value provided.
         /// </remarks>
         /// <seealso cref="Roll(int)"/>
@@ -115,7 +115,7 @@ namespace Xyaneon.Games.Dice
         /// <exception cref="ArgumentOutOfRangeException">
         /// <paramref name="times"/> is less than one.
         /// </exception>
-        /// <seealso cref="Roll"/>
+        /// <seealso cref="Roll()"/>
         public IEnumerable<TFace> Roll(int times)
         {
             if (times < 1)
