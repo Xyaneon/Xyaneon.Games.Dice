@@ -105,6 +105,6 @@ You can use these to get from a ⚃ character to a 4 or vice versa, for example.
 This library is free and open-source software provided under the MIT license.
 Please see the [LICENSE.txt][License] file for details.
 
-[icon]: https://github.com/Xyaneon/Xyaneon.Games.Dice/blob/main/Xyaneon.Games.Dice/images/icon.png
+[icon]: https://raw.githubusercontent.com/Xyaneon/Xyaneon.Games.Dice/main/Xyaneon.Games.Dice/images/icon.png
 [License]: https://github.com/Xyaneon/Xyaneon.Games.Dice/blob/main/LICENSE.txt
 [NuGet package]: https://www.nuget.org/packages/Xyaneon.Games.Dice/
