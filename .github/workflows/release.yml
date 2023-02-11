@@ -24,9 +24,6 @@ jobs:
     - name: Restore .NET dependencies
       run: dotnet restore
       
-    - name: Install Node dependencies
-      run: npm ci
-      
     - name: Build
       run: dotnet build -c Release --no-restore
       
@@ -54,7 +51,10 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 16.x
-        
+    
+    - name: Install Node dependencies
+      run: npm ci
+    
     - name: Semantic Release
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
