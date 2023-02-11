@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/Xyaneon/Xyaneon.Games.Dice/compare/v2.0.1...v2.0.2) (2023-02-11)
+
+
+### Bug Fixes
+
+* **readme:** fix icon display for nuget.org ([fbe8fa7](https://github.com/Xyaneon/Xyaneon.Games.Dice/commit/fbe8fa788dddeeb08edca3202e771f0520405a79))
+
 ## [2.0.1](https://github.com/Xyaneon/Xyaneon.Games.Dice/compare/v2.0.0...v2.0.1) (2023-01-24)
 
 
