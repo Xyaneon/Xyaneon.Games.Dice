@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Xyaneon.Games.Dice.Test
@@ -9,7 +9,8 @@ namespace Xyaneon.Games.Dice.Test
         [TestMethod]
         public void GetD6ValueForSymbol_ShouldThrowForInvalidSymbol()
         {
-            var actualException = Assert.ThrowsException<ArgumentOutOfRangeException>(() => {
+            var actualException = Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
+            {
                 Symbols.GetD6ValueForSymbol('X');
             });
 
@@ -35,7 +36,8 @@ namespace Xyaneon.Games.Dice.Test
         [DataRow(7)]
         public void GetSymbolForD6Value_ShouldThrowForInvalidValue(int value)
         {
-            var actualException = Assert.ThrowsException<ArgumentOutOfRangeException>(() => {
+            var actualException = Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
+            {
                 Symbols.GetSymbolForD6Value(value);
             });
 
