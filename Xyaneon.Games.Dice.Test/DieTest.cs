@@ -1,7 +1,7 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Xyaneon.Games.Dice.Test
 {
@@ -11,7 +11,8 @@ namespace Xyaneon.Games.Dice.Test
         [TestMethod]
         public void Constructor_Faces_ShouldNotCreateDieFromNullCollection()
         {
-            var actualException = Assert.ThrowsException<ArgumentNullException>(() => {
+            var actualException = Assert.ThrowsException<ArgumentNullException>(() =>
+            {
                 _ = new Die<int>(null);
             });
 
@@ -21,7 +22,8 @@ namespace Xyaneon.Games.Dice.Test
         [TestMethod]
         public void Constructor_Faces_ShouldNotCreateDieFromEmptyCollection()
         {
-            var actualException = Assert.ThrowsException<ArgumentException>(() => {
+            var actualException = Assert.ThrowsException<ArgumentException>(() =>
+            {
                 _ = new Die<int>(new int[] { });
             });
 
@@ -39,7 +41,8 @@ namespace Xyaneon.Games.Dice.Test
         [TestMethod]
         public void Constructor_FacesAndSeed_ShouldNotCreateDieFromNullCollection()
         {
-            var actualException = Assert.ThrowsException<ArgumentNullException>(() => {
+            var actualException = Assert.ThrowsException<ArgumentNullException>(() =>
+            {
                 _ = new Die<int>(null, 123);
             });
 
@@ -49,7 +52,8 @@ namespace Xyaneon.Games.Dice.Test
         [TestMethod]
         public void Constructor_FacesAndSeed_ShouldNotCreateDieFromEmptyCollection()
         {
-            var actualException = Assert.ThrowsException<ArgumentException>(() => {
+            var actualException = Assert.ThrowsException<ArgumentException>(() =>
+            {
                 _ = new Die<int>(new int[] { }, 123);
             });
 
@@ -86,7 +90,8 @@ namespace Xyaneon.Games.Dice.Test
             IList<int> faces = new int[] { 1, 2, 3 };
             var die = new Die<int>(faces);
 
-            var actualException = Assert.ThrowsException<ArgumentOutOfRangeException>(() => {
+            var actualException = Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
+            {
                 _ = die.Roll(times).ToList();
             });
 
