@@ -69,4 +69,5 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         file: ./Xyaneon.Games.Dice.Test/TestResults/coverage.info
+        format: lcov
         
