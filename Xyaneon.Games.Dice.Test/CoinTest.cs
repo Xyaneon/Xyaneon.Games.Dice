@@ -49,7 +49,7 @@ namespace Xyaneon.Games.Dice.Test
         {
             var coin = new Coin();
 
-            var actualException = Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
+            var actualException = Assert.ThrowsExactly<ArgumentOutOfRangeException>(() =>
             {
                 _ = coin.Flip(times).ToList();
             });

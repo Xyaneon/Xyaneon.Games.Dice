@@ -11,7 +11,7 @@ namespace Xyaneon.Games.Dice.Test
         [TestMethod]
         public void Constructor_Faces_ShouldNotCreateDieFromNullCollection()
         {
-            var actualException = Assert.ThrowsException<ArgumentNullException>(() =>
+            var actualException = Assert.ThrowsExactly<ArgumentNullException>(() =>
             {
                 _ = new Die<int>(null);
             });
@@ -22,7 +22,7 @@ namespace Xyaneon.Games.Dice.Test
         [TestMethod]
         public void Constructor_Faces_ShouldNotCreateDieFromEmptyCollection()
         {
-            var actualException = Assert.ThrowsException<ArgumentException>(() =>
+            var actualException = Assert.ThrowsExactly<ArgumentException>(() =>
             {
                 _ = new Die<int>(new int[] { });
             });
@@ -41,7 +41,7 @@ namespace Xyaneon.Games.Dice.Test
         [TestMethod]
         public void Constructor_FacesAndSeed_ShouldNotCreateDieFromNullCollection()
         {
-            var actualException = Assert.ThrowsException<ArgumentNullException>(() =>
+            var actualException = Assert.ThrowsExactly<ArgumentNullException>(() =>
             {
                 _ = new Die<int>(null, 123);
             });
@@ -52,7 +52,7 @@ namespace Xyaneon.Games.Dice.Test
         [TestMethod]
         public void Constructor_FacesAndSeed_ShouldNotCreateDieFromEmptyCollection()
         {
-            var actualException = Assert.ThrowsException<ArgumentException>(() =>
+            var actualException = Assert.ThrowsExactly<ArgumentException>(() =>
             {
                 _ = new Die<int>(new int[] { }, 123);
             });
@@ -90,7 +90,7 @@ namespace Xyaneon.Games.Dice.Test
             IList<int> faces = new int[] { 1, 2, 3 };
             var die = new Die<int>(faces);
 
-            var actualException = Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
+            var actualException = Assert.ThrowsExactly<ArgumentOutOfRangeException>(() =>
             {
                 _ = die.Roll(times).ToList();
             });
