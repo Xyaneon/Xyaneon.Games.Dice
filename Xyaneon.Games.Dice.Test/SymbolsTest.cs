@@ -9,7 +9,7 @@ namespace Xyaneon.Games.Dice.Test
         [TestMethod]
         public void GetD6ValueForSymbol_ShouldThrowForInvalidSymbol()
         {
-            var actualException = Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
+            var actualException = Assert.ThrowsExactly<ArgumentOutOfRangeException>(() =>
             {
                 Symbols.GetD6ValueForSymbol('X');
             });
@@ -36,7 +36,7 @@ namespace Xyaneon.Games.Dice.Test
         [DataRow(7)]
         public void GetSymbolForD6Value_ShouldThrowForInvalidValue(int value)
         {
-            var actualException = Assert.ThrowsException<ArgumentOutOfRangeException>(() =>
+            var actualException = Assert.ThrowsExactly<ArgumentOutOfRangeException>(() =>
             {
                 Symbols.GetSymbolForD6Value(value);
             });
